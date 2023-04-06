@@ -14,9 +14,9 @@ export async function dbConnect() {
 }
 
 connection.on("connected", () => {
-	console.log("Mongodb is connected");
+	console.log("Mongodb is connected, 🎉");
 });
 
 connection.on("error", (err) => {
-	console.log(err);
+	console.log("Error F: " + err);
 });
